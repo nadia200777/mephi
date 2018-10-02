@@ -78,6 +78,7 @@ std::string derivation(std::string poly)
 
         }
         if (result[0] == '+') result = result.substr(1);
+        if (result == "") result = "0";
 
         return result;
 }
